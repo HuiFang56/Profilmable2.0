@@ -16,7 +16,7 @@ class App extends Component{
     return(
       <main>
         <div className="appcomponent">
-          <Header title="ProFilmable2"/>
+          <Header title="ProFilmable 2"/>
 
 
         </div>
