@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Profilmable2.0/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Profilmable2.0/static/js/main.60345b83.chunk.js",
-    "main.js.map": "/Profilmable2.0/static/js/main.60345b83.chunk.js.map",
+    "main.css": "/Profilmable2.0/static/css/main.dcd3580c.chunk.css",
+    "main.js": "/Profilmable2.0/static/js/main.f6391def.chunk.js",
+    "main.js.map": "/Profilmable2.0/static/js/main.f6391def.chunk.js.map",
     "runtime-main.js": "/Profilmable2.0/static/js/runtime-main.0fac2c1e.js",
     "runtime-main.js.map": "/Profilmable2.0/static/js/runtime-main.0fac2c1e.js.map",
     "static/js/2.02766802.chunk.js": "/Profilmable2.0/static/js/2.02766802.chunk.js",
     "static/js/2.02766802.chunk.js.map": "/Profilmable2.0/static/js/2.02766802.chunk.js.map",
     "index.html": "/Profilmable2.0/index.html",
-    "precache-manifest.c0e231d9464de0c73854a9a2d089aa21.js": "/Profilmable2.0/precache-manifest.c0e231d9464de0c73854a9a2d089aa21.js",
+    "precache-manifest.d8d63487e64cd57466a574077c61130a.js": "/Profilmable2.0/precache-manifest.d8d63487e64cd57466a574077c61130a.js",
     "service-worker.js": "/Profilmable2.0/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/Profilmable2.0/static/css/main.5ecd60fb.chunk.css.map",
+    "static/css/main.dcd3580c.chunk.css.map": "/Profilmable2.0/static/css/main.dcd3580c.chunk.css.map",
     "static/js/2.02766802.chunk.js.LICENSE.txt": "/Profilmable2.0/static/js/2.02766802.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0fac2c1e.js",
     "static/js/2.02766802.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.60345b83.chunk.js"
+    "static/css/main.dcd3580c.chunk.css",
+    "static/js/main.f6391def.chunk.js"
   ]
 }
