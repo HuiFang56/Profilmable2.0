@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Profilmable2.0/precache-manifest.d8d63487e64cd57466a574077c61130a.js"
+  "/Profilmable2.0/precache-manifest.c1e3c71a1ce067cb630654c72f4a0dcd.js"
 );
 
 self.addEventListener('message', (event) => {
