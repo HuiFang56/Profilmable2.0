@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0eda05dbe033b5f63fdc7ff9d47a6c94",
+    "revision": "918195d8326fd70df2eb6f3cf859fbd3",
     "url": "/Profilmable2.0/index.html"
   },
   {
-    "revision": "793529125cf8fb110549",
+    "revision": "159096f00c760e581f7f",
     "url": "/Profilmable2.0/static/css/main.dcd3580c.chunk.css"
   },
   {
-    "revision": "f35f6418d3b5d7798384",
-    "url": "/Profilmable2.0/static/js/2.6cea0bf5.chunk.js"
+    "revision": "56b4d039aefb5a5ef7de",
+    "url": "/Profilmable2.0/static/js/2.8e68aac1.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Profilmable2.0/static/js/2.6cea0bf5.chunk.js.LICENSE.txt"
+    "url": "/Profilmable2.0/static/js/2.8e68aac1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "793529125cf8fb110549",
-    "url": "/Profilmable2.0/static/js/main.a3543293.chunk.js"
+    "revision": "159096f00c760e581f7f",
+    "url": "/Profilmable2.0/static/js/main.71651f36.chunk.js"
   },
   {
     "revision": "dadd4457e2e38e14b59c",
