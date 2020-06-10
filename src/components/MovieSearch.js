@@ -6,18 +6,22 @@ constructor(props){
     super(props);
     this.state={
         inputValue:'',
-        movieId:['blank space'],
-        movieRawData:[],
-        movieBf:[]
+        movieId:'0000',
+        movieBf:[],
+        moviePosterPath:'',
+        movieImage:''
     }
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.dataRender = this.dataRender.bind(this)
+
 }
 
 handleChange = (e) =>{
     this.setState({
         inputValue:e.target.value
     });
+    console.log("Here is handleChange's test")
 }
 
 handleSubmit = (e) => {
@@ -25,20 +29,29 @@ handleSubmit = (e) => {
     console.log("We hit!");
     console.log(`${this.state.inputValue}`);
     // fetch data
-    const fetchData = axios.get(`https://api.themoviedb.org/3/search/movie?api_key=4ac5617406e7160eb1ce718f294179fd&query=${this.state.inputValue}`)
+    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=4ac5617406e7160eb1ce718f294179fd&query=${this.state.inputValue}`)
         .then(
             response => 
                 this.setState({
-                    movieRawData:response.data.results[0],
                     movieId:response.data.results[0].id,
                     movieBf:response.data.results[0].overview
 
                 })
-        ).then(
-            console.log(this.state.movieId),
-            console.log(this.state.movieRawData)
+        ).then( response =>
+            axios.get(`https://api.themoviedb.org/3/movie/${this.state.movieId}?api_key=4ac5617406e7160eb1ce718f294179fd`)
+                .then(
+                    response =>
+                    this.setState({
+                        moviePosterPath:response.data.poster_path
+                    })
+                )   
         )
-        
+}
+
+dataRender = (e) =>{
+    e.preventDefault();
+    // console.log(this.state.movieId)
+    console.log("Here is dataRender's Data")
 }
 
 render(){
@@ -53,8 +66,9 @@ render(){
                 </label>
             <input type="submit" value="Submit" />
             </form>
-            <h4>{this.state.movieBf}</h4>
-          
+            <h4>Movie Brief in return:{this.state.movieBf}</h4>
+            <h5>https://image.tmdb.org/t/p/w500/{this.state.moviePosterPath}</h5>
+            <img src={`https://image.tmdb.org/t/p/w500/${this.state.moviePosterPath}`} alt="moviePoster" width="500px" hight="100%"/>
         </div>
     );
     }

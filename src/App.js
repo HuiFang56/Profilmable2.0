@@ -6,10 +6,9 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-        
+        selectedMovieid:"",
     }
   } 
-
 
 
   render(){
@@ -19,9 +18,9 @@ class App extends Component{
         <div className="appcomponent">
           <Header title="ProFilmable 2"/>
           <MovieSearch />
-
-
+          
         </div>
+        
       </main>
       
     )
