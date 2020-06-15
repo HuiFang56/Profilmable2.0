@@ -67,8 +67,17 @@ render(){
             <input type="submit" value="Submit" />
             </form>
             <h4>Movie Brief in return:{this.state.movieBf}</h4>
-            <h5>https://image.tmdb.org/t/p/w500/{this.state.moviePosterPath}</h5>
+            {/* <h5>https://image.tmdb.org/t/p/w500/{this.state.moviePosterPath}</h5> */}
             <img src={`https://image.tmdb.org/t/p/w500/${this.state.moviePosterPath}`} alt="moviePoster" width="500px" hight="100%"/>
+            <div style={{
+                backgroundImage:`url(https://image.tmdb.org/t/p/w500/${this.state.moviePosterPath})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center center',
+                width:'900px',
+                height:'100%',
+            }}>
+            </div>
+            Movie Poster Background
         </div>
     );
     }
